@@ -17,7 +17,7 @@
     },
     {
       "src": "img/pwa-512x512.png",
-      "sizes": "225x225",
+      "sizes": "512x512",
       "type": "image/png"
     }
   ]
