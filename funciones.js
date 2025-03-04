@@ -78,9 +78,10 @@ function comenzarJuego(){
 
 function cargarEscenario(){
 	if(!localStorage.getItem('marcador1')){
-		alert('primera vez')
 		localStorage.setItem('marcador1', '0');
 		localStorage.setItem('marcador2', '0');
+		marcador1 = localStorage.getItem('marcador1');
+		marcador2 = localStorage.getItem('marcador2');
 	}else{
 		marcador1 = localStorage.getItem('marcador1');
 		marcador2 = localStorage.getItem('marcador2');
@@ -158,6 +159,7 @@ function conteo(){
 function disparo1(){
 	console.log('disparo1');
 	document.querySelector('.right').setAttribute('onclick', '');
+	document.querySelector('.left').setAttribute('onclick', '');
 	document.querySelector('.p2').style.right = "-800px";
 	document.querySelector('.p1').style.left = "10px";
 	setTimeout(function(){
@@ -176,6 +178,7 @@ function disparo1(){
 function disparo2(){
 	console.log('disparo2');
 	document.querySelector('.left').setAttribute('onclick', '');
+	document.querySelector('.right').setAttribute('onclick', '');
 	document.querySelector('.p1').style.left = "-800px";
 	document.querySelector('.p2').style.right = "10px";
 	setTimeout(function(){
