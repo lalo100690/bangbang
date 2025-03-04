@@ -3,12 +3,12 @@
   "short_name": "BANG BANG",
   "start_url": "index.html",
   "display": "standalone", 
-  "background_color": "#ff88ff",
+  "background_color": "#000",
   "lang": "es",
   "scope": "/", 
   "description": "", 
   "orientation": "landscape-primary",
-  "theme_color": "#40C090", 
+  "theme_color": "#000", 
  
   "icons": [
     {
