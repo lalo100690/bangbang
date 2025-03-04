@@ -7,6 +7,7 @@
   "lang": "es",
   "scope": "/", 
   "description": "", 
+  "orientation": "landscape"
   "theme_color": "#40C090", 
  
   "icons": [
