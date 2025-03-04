@@ -1,9 +1,7 @@
 const CACHE_NAME = "space-impact-cache-v1";
 const urlsToCache = [
     "/",
-    "/index.html",
-    "/estilo.css",
-    "/funciones.js",
+   "/estilo.css",
     "/manifestPlantilla.json",
     "/img/pwa-192x192.png",
     "/img/pwa-512x512.png"
