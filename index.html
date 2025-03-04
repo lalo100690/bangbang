@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BANG BANG</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Sancreek&display=swap" rel="stylesheet">
+	<link rel="manifest" href="manifestPlantilla.json">
+
+	
+</head>
+<body>
+	<div class="bg-transicion"></div>
+	<div class="bg-inicio">
+		<button class="btn-inicio" onclick="jugar()">JUGAR</button>
+	</div>
+</body>
+
+<script type="text/javascript" src="funciones.js"></script>
+<script type="text/javascript">
+	window.addEventListener('load', init)
+	function init(){
+		alert('')
+		if('serviceWorker' in navigator){
+		navigator.serviceWorker.register('sw.js').then(function(registration){
+			//si es exitoso
+			console.log('SW registrado correctamente');
+		}, function(err){
+			//si falla
+			console.log('SW fallo', err);
+		});
+	
+		}else{
+			console.log('ERROR');
+		}
+	
+	}
+</script>
+
+
+
+</html>

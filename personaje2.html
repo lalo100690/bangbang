@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" >
+	<title>Bang Bang</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Sancreek&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<div class="bg-transicion bg-transicion-show"></div>
+
+	<div class="bg-personaje">
+		<div class="titulo">
+			<h1>SELECCIONA TU PERSONAJE</h1>
+		</div>	
+
+		<div class="personajes">
+			<button class="anterior" onclick="anteriorPersonaje()">
+				<img src="img/left.png">
+			</button>
+			<div class="personaje">
+				<img src="img/p1.png" id="personaje" style="transform: rotateY(180deg);">
+			</div>
+			<button class="siguiente" onclick="siguientePersonaje()">
+				<img src="img/right.png">
+			</button>
+		</div>
+
+		<div class="barra">
+			<input type="text" id="jugador2" placeholder="Jugador 2" class="txt-nombre">
+			<button class="btn-siguiente" onclick="comenzarJuego()">SIGUIENTE</button>
+		</div>
+		
+	</div>
+</body>
+
+<script type="text/javascript" src="funciones.js"></script>
+<script type="text/javascript">
+	window.addEventListener('load', quitarBG)
+</script>
+
+</html>
